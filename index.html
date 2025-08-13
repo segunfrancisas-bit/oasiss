@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD OASIS</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fdf6e3; /* Cream background */
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #006d5b; /* Emerald green */
+            color: white;
+            padding: 15px 0;
+        }
+
+        header .logo {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 50px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section with Eiffel Tower */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+
+        .hero h2, .hero p, .hero .btn {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #006d5b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004e41;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #006d5b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">CAD OASIS</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <h2>Welcome to CAD OASIS</h2>
+    <p>Where creativity meets precision — delivering world-class design solutions that inspire and endure.</p>
+    <a href="#services" class="btn">Discover Our Expertise</a>
+</section>
+
+<section id="services" class="services container">
+    <div class="service-card">
+        <h3>Bespoke Design Solutions</h3>
+        <p>We craft unique, high-quality designs tailored to reflect your vision, style, and goals.</p>
+    </div>
+    <div class="service-card">
+        <h3>Expert Consultation</h3>
+        <p>Receive professional insights and guidance to bring your ideas to life with clarity and excellence.</p>
+    </div>
+    <div class="service-card">
+        <h3>Innovative Project Delivery</h3>
+        <p>Combining creativity with cutting-edge technology for results that stand the test of time.</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <p><strong>Olatundun Oluwasegun Francis</strong> | Phone: <a href="tel:08140730579" style="color:white;">081407305
